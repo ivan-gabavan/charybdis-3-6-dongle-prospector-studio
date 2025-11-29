@@ -21,12 +21,12 @@
 &sl { ignore-modifiers; };
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <500>;
 };
 
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <500>;
     quick-tap-ms = <175>;
 };
@@ -38,43 +38,47 @@
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <500>;
             require-prior-idle-ms = <125>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
 
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <500>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <250>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
 
         hml_s: hml_s {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <500>;
             quick-tap-ms = <125>;
             require-prior-idle-ms = <0>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
 
         hmr_s: hmr_s {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <500>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <0>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
 
