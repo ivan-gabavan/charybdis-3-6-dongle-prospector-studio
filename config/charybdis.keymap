@@ -5,11 +5,10 @@
 
 #define BASE 0
 #define MOUSE 1
-#define SYMBOL 2
+#define FUNCTION 2
 #define NUMBER 3
-#define FUNCTION 4
+#define RESET 4
 #define GAME 5
-#define RESET 6
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
 #define THUMBS 30 31 32 33 34 35
@@ -92,6 +91,12 @@
         compatible = "zmk,combos";
         timeout-ms = <20>;
         require-prior-idle-ms = <250>;
+
+        combo_reset_central {
+            key-positions = <32 33>;
+            bindings = <&bootloader>;
+            require-prior-idle-ms = <2000>;
+        };
     };
 
     chosen { zmk,physical-layout = &charybdis_6col_layout; };
@@ -105,7 +110,7 @@
 &kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B          &kp J        &kp L                &kp U         &kp Y        &hml RIGHT_BRACE LEFT_BRACE  &hml GRAVE DOUBLE_QUOTES
 &kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G          &kp M        &hmr LEFT_COMMAND N  &hmr RSHFT E  &hmr RALT I  &hmr LEFT_CONTROL O          &hml SEMICOLON COLON
 &kp MINUS  &kp Z                &mt LG(X) X  &mt LG(C) C   &kp D                &mt LG(V) V    &kp K        &kp H                &kp DOT       &kp COMMA    &kp EXCLAMATION              &kp EQUAL
-                                             &kp ESC       &kp SPACE            &kp F16        &lt 2 ENTER  &kp BSPC
+                                             &kp ESC       &kp SPACE            &kp F16        &lt 3 ENTER  &kp BSPC
             >;
         };
 
@@ -115,7 +120,17 @@
 &bootloader  &trans            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &trans      &trans  &trans    &trans    &trans    &trans  &trans
 &trans       &kp LEFT_CONTROL  &kp LALT      &kp LSHFT     &kp LEFT_COMMAND  &trans      &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
 &trans       &trans            &trans        &trans        &trans            &trans      &trans  &trans    &trans    &trans    &trans  &trans
-                                             &mkp MB1      &mkp MB2          &mkp MB3    &trans  &trans
+                                             &mkp MB1      &mkp MB2          &mo FUNCTION &trans  &trans
+            >;
+        };
+
+        Function {
+            display-name = "Function";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans      &trans  &trans
             >;
         };
 
@@ -124,7 +139,7 @@
             bindings = <
 &studio_unlock  &none                        &kp N7          &kp N8           &kp N9                  &kp N0                  &kp LG(LS(NUMBER_4))   &kp PG_UP                 &kp UP              &kp PG_DN          &kp TILDE                 &kp SINGLE_QUOTE
 &kp LESS_THAN   &hml LEFT_CONTROL AMPERSAND  &hml_s LALT N4  &hml_s LSHFT N5  &hml_s LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmr_s LEFT_COMMAND LEFT  &hmr_s RSHFT DOWN   &hmr_s RALT RIGHT  &hml LEFT_CONTROL DOLLAR  &kp GREATER_THAN
-&to 4           &none                        &kp N1          &kp N2           &kp N3                  &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS        &hml PERCENT MINUS  &kp COMMA          &none                     &kp EQUAL
+&to 5           &none                        &kp N1          &kp N2           &kp N3                  &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS        &hml PERCENT MINUS  &kp COMMA          &none                     &kp EQUAL
                                                              &hml DOT COLON   &kp N0                  &kp SPACE               &trans                 &none
             >;
         };
