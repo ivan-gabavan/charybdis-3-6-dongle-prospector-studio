@@ -27,19 +27,19 @@ layers:
   - {t: ':', h: ;}
   - '-'
   - Z
-  - {t: X, h: Gui+ X}
-  - {t: C, h: Gui+ C}
+  - X
+  - C
   - D
-  - {t: V, h: Gui+ V}
+  - V
   - K
   - H
   - .
   - ','
-  - '!'
+  - {t: '!', h: '?'}
   - '='
   - ESC
   - SPACE
-  - F16
+  - {t: F16, h: Mouse}
   - {t: ENTER, h: Number}
   - BSPC
   Mouse:
@@ -58,8 +58,8 @@ layers:
   - {t: ▽, type: trans}
   - LEFT CONTROL
   - LALT
-  - LSHFT
-  - LEFT COMMAND
+  - '&mkp MB2'
+  - '&mkp MB1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - Function
+  - {t: Function, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Function:

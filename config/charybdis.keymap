@@ -57,9 +57,9 @@
         hml_s: hml_s {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <2000>;
-            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
             require-prior-idle-ms = <0>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
@@ -107,20 +107,20 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B          &kp J        &kp L                &kp U         &kp Y        &hml RIGHT_BRACE LEFT_BRACE  &hml GRAVE DOUBLE_QUOTES
-&kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G          &kp M        &hmr LEFT_COMMAND N  &hmr RSHFT E  &hmr RALT I  &hmr LEFT_CONTROL O          &hml SEMICOLON COLON
-&kp MINUS  &kp Z                &mt LG(X) X  &mt LG(C) C   &kp D                &mt LG(V) V    &kp K        &kp H                &kp DOT       &kp COMMA    &kp EXCLAMATION              &kp EQUAL
-                                             &kp ESC       &kp SPACE            &kp F16        &lt 3 ENTER  &kp BSPC
+&kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B        &kp J        &kp L                &kp U         &kp Y        &hml_s RIGHT_BRACE LEFT_BRACE  &hml_s GRAVE DOUBLE_QUOTES
+&kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G        &kp M        &hml LEFT_COMMAND N  &hml RSHFT E  &hml RALT I  &hml LEFT_CONTROL O            &hml_s SEMICOLON COLON
+&kp MINUS  &kp Z                &kp X        &kp C         &kp D                &kp V        &kp K        &kp H                &kp DOT       &kp COMMA    &hml_s QUESTION EXCLAMATION    &kp EQUAL
+                                             &kp ESC       &kp SPACE            &lt 1 F16    &lt 3 ENTER  &kp BSPC
             >;
         };
 
         Mouse {
             display-name = "Mouse";
             bindings = <
-&bootloader  &trans            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &trans      &trans  &trans    &trans    &trans    &trans  &trans
-&trans       &kp LEFT_CONTROL  &kp LALT      &kp LSHFT     &kp LEFT_COMMAND  &trans      &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans       &trans            &trans        &trans        &trans            &trans      &trans  &trans    &trans    &trans    &trans  &trans
-                                             &mkp MB1      &mkp MB2          &mo FUNCTION &trans  &trans
+&bootloader  &trans            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &trans  &trans    &trans    &trans    &trans  &trans
+&trans       &kp LEFT_CONTROL  &kp LALT      &mkp MB2      &mkp MB1      &trans          &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans       &trans            &trans        &trans        &trans        &trans          &trans  &trans    &trans    &trans    &trans  &trans
+                                             &mkp MB1      &mkp MB2      &mo FUNCTION    &trans  &trans
             >;
         };
 
@@ -130,17 +130,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans      &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
 
         Num {
             display-name = "Number";
             bindings = <
-&studio_unlock  &none                        &kp N7          &kp N8           &kp N9                  &kp N0                  &kp LG(LS(NUMBER_4))   &kp PG_UP                 &kp UP              &kp PG_DN          &kp TILDE                 &kp SINGLE_QUOTE
-&kp LESS_THAN   &hml LEFT_CONTROL AMPERSAND  &hml_s LALT N4  &hml_s LSHFT N5  &hml_s LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmr_s LEFT_COMMAND LEFT  &hmr_s RSHFT DOWN   &hmr_s RALT RIGHT  &hml LEFT_CONTROL DOLLAR  &kp GREATER_THAN
-&to 5           &none                        &kp N1          &kp N2           &kp N3                  &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS        &hml PERCENT MINUS  &kp COMMA          &none                     &kp EQUAL
-                                                             &hml DOT COLON   &kp N0                  &kp SPACE               &trans                 &none
+&studio_unlock  &none                          &kp N7          &kp N8            &kp N9                  &kp N0                  &kp LG(LS(NUMBER_4))    &kp PG_UP                 &kp UP                &kp PG_DN          &kp TILDE                   &kp SINGLE_QUOTE
+&kp LESS_THAN   &hml_s LEFT_CONTROL AMPERSAND  &hml_s LALT N4  &hml_s LSHFT N5   &hml_s LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &hml_s LEFT_COMMAND LEFT  &hml_s RSHFT DOWN     &hml_s RALT RIGHT  &hml_s LEFT_CONTROL DOLLAR  &kp GREATER_THAN
+&to 5           &none                          &kp N1          &kp N2            &kp N3                  &kp PIPE                &hml_s BACKSLASH SLASH  &hml_s ASTERISK PLUS      &hml_s PERCENT MINUS  &kp COMMA          &none                       &kp EQUAL
+                                                               &hml_s DOT COLON  &kp N0                  &kp SPACE               &trans                  &none
             >;
         };
 
