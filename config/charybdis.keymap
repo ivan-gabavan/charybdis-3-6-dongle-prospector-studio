@@ -36,12 +36,10 @@
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <2000>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <125>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
         };
 
@@ -104,7 +102,7 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp F13    &kp Q                &kp W        &kp F         &kp P                &kp T          &kp J        &kp L                &kp U         &kp Y        &hml RIGHT_BRACE LEFT_BRACE  &hml GRAVE DOUBLE_QUOTES
+&kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B          &kp J        &kp L                &kp U         &kp Y        &hml RIGHT_BRACE LEFT_BRACE  &hml GRAVE DOUBLE_QUOTES
 &kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G          &kp M        &hmr LEFT_COMMAND N  &hmr RSHFT E  &hmr RALT I  &hmr LEFT_CONTROL O          &hml SEMICOLON COLON
 &kp MINUS  &kp Z                &mt LG(X) X  &mt LG(C) C   &kp D                &mt LG(V) V    &kp K        &kp H                &kp DOT       &kp COMMA    &kp EXCLAMATION              &kp EQUAL
                                              &kp ESC       &kp SPACE            &kp F16        &lt 2 ENTER  &kp BSPC
