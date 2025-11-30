@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - {t: '{', h: '}'}
-  - {t: '"', h: '`'}
+  - '"'
   - TAB
   - {t: A, h: LEFT CONTROL}
   - {t: R, h: LALT}
@@ -24,7 +24,7 @@ layers:
   - {t: E, h: RSHFT}
   - {t: I, h: RALT}
   - {t: O, h: LEFT CONTROL}
-  - {t: ':', h: ;}
+  - ;
   - '-'
   - Z
   - X
