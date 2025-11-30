@@ -9,11 +9,17 @@
 #define NUMBER 3
 #define RESET 4
 #define GAME 5
+
 // Левые основные кнопки (3 ряда по 6)
+
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29
+
 // Правые основные кнопки (3 ряда по 6)
+
 #define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35
+
 // Большие пальцы (всего 5 позиций в раскладке 3x6)
+
 #define THUMBS 36 37 38 39 40
 
 &sk {
@@ -114,10 +120,10 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B        &kp J        &kp L                &kp U         &kp Y        &hml_s RIGHT_BRACE LEFT_BRACE  &hml_s GRAVE DOUBLE_QUOTES
-&kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G        &kp M        &hml LEFT_COMMAND N  &hml RSHFT E  &hml RALT I  &hml LEFT_CONTROL O            &hml_s SEMICOLON COLON
-&kp MINUS  &kp Z                &kp X        &kp C         &kp D                &kp V        &kp K        &kp H                &kp DOT       &kp COMMA    &hml_s QUESTION EXCLAMATION    &kp EQUAL
-                                             &kp ESC       &kp SPACE            &mo MOUSE   &lt 3 ENTER  &kp BSPC
+&kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B        &kp J        &kp L                &kp U         &kp Y        &hml RIGHT_BRACE LEFT_BRACE  &hml GRAVE DOUBLE_QUOTES
+&kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G        &kp M        &hml LEFT_COMMAND N  &hml RSHFT E  &hml RALT I  &hml LEFT_CONTROL O          &hml SEMICOLON COLON
+&kp MINUS  &kp Z                &kp X        &kp C         &kp D                &kp V        &kp K        &kp H                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION    &kp EQUAL
+                                             &kp ESC       &kp SPACE            &mo MOUSE    &lt 3 ENTER  &kp BSPC
             >;
         };
 
@@ -144,10 +150,10 @@
         Num {
             display-name = "Number";
             bindings = <
-&studio_unlock  &none                          &kp N7          &kp N8            &kp N9                  &kp N0                  &kp LG(LS(NUMBER_4))    &kp PG_UP                 &kp UP                &kp PG_DN          &kp TILDE                   &kp SINGLE_QUOTE
-&kp LESS_THAN   &hml_s LEFT_CONTROL AMPERSAND  &hml_s LALT N4  &hml_s LSHFT N5   &hml_s LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS   &hml_s LEFT_COMMAND LEFT  &hml_s RSHFT DOWN     &hml_s RALT RIGHT  &hml_s LEFT_CONTROL DOLLAR  &kp GREATER_THAN
-&to 5           &none                          &kp N1          &kp N2            &kp N3                  &kp PIPE                &hml_s BACKSLASH SLASH  &hml_s ASTERISK PLUS      &hml_s PERCENT MINUS  &kp COMMA          &none                       &kp EQUAL
-                                                               &hml_s DOT COLON  &kp N0                  &kp SPACE               &trans                  &none
+&studio_unlock  &none                        &kp N7        &kp N8          &kp N9                &kp N0                  &kp LG(LS(NUMBER_4))   &kp PG_UP           &kp UP              &kp PG_DN  &kp TILDE                 &kp SINGLE_QUOTE
+&kp LESS_THAN   &hml LEFT_CONTROL AMPERSAND  &hml LALT N4  &hml LSHFT N5   &hml LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT            &kp DOWN            &kp RIGHT  &hml LEFT_CONTROL DOLLAR  &kp GREATER_THAN
+&to 5           &none                        &kp N1        &kp N2          &kp N3                &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS  &hml PERCENT MINUS  &kp COMMA  &none                     &kp EQUAL
+                                                           &hml DOT COLON  &kp N0                &kp SPACE               &trans                 &none
             >;
         };
 

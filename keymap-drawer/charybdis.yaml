@@ -146,9 +146,9 @@ layers:
   - {t: '6', h: LEFT COMMAND}
   - (
   - )
-  - {t: LEFT, h: LEFT COMMAND}
-  - {t: DOWN, h: RSHFT}
-  - {t: RIGHT, h: RALT}
+  - LEFT
+  - DOWN
+  - RIGHT
   - {t: $, h: LEFT CONTROL}
   - '>'
   - {t: dota, h: toggle}
