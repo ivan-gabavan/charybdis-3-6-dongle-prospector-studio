@@ -114,7 +114,7 @@
 &kp F13    &kp Q                &kp W        &kp F         &kp P                &kp B        &kp J        &kp L                &kp U         &kp Y        &hml_s RIGHT_BRACE LEFT_BRACE  &hml_s GRAVE DOUBLE_QUOTES
 &kp TAB    &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G        &kp M        &hml LEFT_COMMAND N  &hml RSHFT E  &hml RALT I  &hml LEFT_CONTROL O            &hml_s SEMICOLON COLON
 &kp MINUS  &kp Z                &kp X        &kp C         &kp D                &kp V        &kp K        &kp H                &kp DOT       &kp COMMA    &hml_s QUESTION EXCLAMATION    &kp EQUAL
-                                             &kp ESC       &kp SPACE            &lt 1 F16    &lt 3 ENTER  &kp BSPC
+                                             &kp ESC       &kp SPACE            &mo MOUSE   &lt 3 ENTER  &kp BSPC
             >;
         };
 
