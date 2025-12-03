@@ -35,9 +35,9 @@
 };
 
 &lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <500>;
-    quick-tap-ms = <175>;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <100>;
 };
 
 &caps_word { /delete-property/ ignore-modifiers; };
@@ -48,8 +48,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
