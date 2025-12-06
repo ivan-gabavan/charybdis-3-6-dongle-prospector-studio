@@ -6,7 +6,8 @@
 #define FN 2
 #define NUM 3
 #define SYM 4
-#define GENSHIN 5 
+#define GENSHIN 5
+#define SNIPE 6 
 
 / {
   split_inputs {
@@ -25,7 +26,7 @@
     device = <&trackball_split>;
 
     snipe {
-      layers = <NUM>;
+      layers = <SNIPE>;
       input-processors = <&zip_xy_scaler 1 3>;
     };
 

@@ -56,7 +56,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - dota
   - Function
   - '&mkp MB2'
   - '&mkp MB1'
@@ -151,7 +151,7 @@ layers:
   - RIGHT
   - {t: $, h: LEFT CONTROL}
   - '>'
-  - {t: dota, h: toggle}
+  - {t: Snipe, h: toggle}
   - ''
   - '1'
   - '2'
@@ -210,6 +210,48 @@ layers:
   - BOOT LDR
   - BOOT LDR
   - ''
+  Snipe:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   dota:
   - '5'
   - '4'
@@ -224,7 +266,7 @@ layers:
   - V
   - {t: Base, h: toggle}
   - LSHFT
-  - S
+  - {t: S, type: held}
   - Q
   - W
   - E
@@ -249,7 +291,7 @@ layers:
   - F7
   - '&mkp MB1'
   - '&mkp MB2'
-  - '6'
+  - {t: '6', type: held}
   - '8'
   - '7'
 combos:
