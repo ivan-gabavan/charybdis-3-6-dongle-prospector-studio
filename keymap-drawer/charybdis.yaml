@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
   Base:
-  - F13
+  - ESCAPE
   - Q
   - W
   - F
@@ -37,7 +37,7 @@ layers:
   - ','
   - {t: '!', h: '?'}
   - '='
-  - ESC
+  - F13
   - SPACE
   - Mouse
   - {t: ENTER, h: Number}
@@ -128,7 +128,7 @@ layers:
   - {t: ▽, type: trans}
   Number:
   - ZMK Studio
-  - ''
+  - '~'
   - '7'
   - '8'
   - '9'
@@ -137,7 +137,7 @@ layers:
   - PG UP
   - UP
   - PG DN
-  - '~'
+  - {t: '[', h: ']'}
   - BOOT LDR
   - <
   - {t: '&', h: LEFT CONTROL}
@@ -152,7 +152,7 @@ layers:
   - {t: $, h: LEFT CONTROL}
   - '>'
   - {t: dota, h: toggle}
-  - ''
+  - '#'
   - '1'
   - '2'
   - '3'
@@ -260,9 +260,9 @@ layers:
   - '1'
   - Y
   - M
-  - F10
-  - UP
-  - F11
+  - '4'
+  - '5'
+  - '6'
   - V
   - {t: Base, h: toggle}
   - LSHFT
@@ -272,9 +272,9 @@ layers:
   - E
   - R
   - G
-  - LEFT
-  - DOWN
-  - RIGHT
+  - '1'
+  - '2'
+  - '3'
   - F1
   - F9
   - LALT
