@@ -6,7 +6,7 @@
 #define FN 2
 #define NUM 3
 #define SYM 4
-#define GENSHIN 5
+#define GAME 5
 #define SNIPE 6 
 
 / {
@@ -28,6 +28,11 @@
     snipe {
       layers = <SNIPE>;
       input-processors = <&zip_xy_scaler 1 3>;
+    };
+
+    dota {
+      layers = <GAME>;
+      input-processors = <&zip_xy_scaler 5 1>;
     };
 
     scroll {
