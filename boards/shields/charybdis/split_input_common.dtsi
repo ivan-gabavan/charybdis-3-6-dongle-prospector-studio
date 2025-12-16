@@ -6,8 +6,8 @@
 #define FN 2
 #define NUM 3
 #define SYM 4
-#define GAME 5
-#define SNIPE 6 
+#define SNIPE 5
+#define GAME 6 
 
 / {
   split_inputs {

@@ -56,7 +56,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - dota
+  - Snipe
   - Function
   - '&mkp MB2'
   - '&mkp MB1'
@@ -224,7 +224,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&mkp MB2'
   - '&mkp MB1'
@@ -249,7 +249,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - Function
+  - {t: Function, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   dota:
@@ -266,7 +266,7 @@ layers:
   - V
   - {t: Base, h: toggle}
   - LSHFT
-  - {t: S, type: held}
+  - S
   - Q
   - W
   - E
@@ -291,7 +291,7 @@ layers:
   - F7
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: '6', type: held}
+  - '6'
   - '8'
   - '7'
 combos:

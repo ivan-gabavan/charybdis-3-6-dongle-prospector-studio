@@ -8,8 +8,8 @@
 #define FUNCTION 2
 #define NUMBER 3
 #define RESET 4
-#define GAME 5
-#define SNIPE 6
+#define SNIPE 5
+#define GAME 6
 
 // Левые основные кнопки (3 ряда по 6)
 
@@ -153,7 +153,7 @@
             bindings = <
 &studio_unlock  &kp TILDE                    &kp N7        &kp N8          &kp N9                &kp N0                  &kp LG(LS(NUMBER_4))   &kp PG_UP           &kp UP              &kp PG_DN  &hml RIGHT_BRACKET LEFT_BRACKET  &bootloader
 &kp LESS_THAN   &hml LEFT_CONTROL AMPERSAND  &hml LALT N4  &hml LSHFT N5   &hml LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT            &kp DOWN            &kp RIGHT  &hml LEFT_CONTROL DOLLAR         &kp GREATER_THAN
-&to 6           &kp HASH                     &kp N1        &kp N2          &kp N3                &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS  &hml PERCENT MINUS  &kp COMMA  &kp SINGLE_QUOTE                 &kp EQUAL
+&to GAME        &kp HASH                     &kp N1        &kp N2          &kp N3                &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS  &hml PERCENT MINUS  &kp COMMA  &kp SINGLE_QUOTE                 &kp EQUAL
                                                            &hml DOT COLON  &kp N0                &kp SPACE               &trans                 &none
             >;
         };
