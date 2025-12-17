@@ -32,7 +32,7 @@
 
     dota {
       layers = <GAME>;
-      input-processors = <&zip_xy_scaler 5 1>;
+      input-processors = <&zip_xy_scaler 3 1>;
     };
 
     scroll {
