@@ -253,53 +253,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   dota:
-  - '5'
-  - '4'
-  - '3'
-  - '2'
-  - '1'
-  - Y
-  - M
-  - '4'
-  - '5'
-  - '6'
-  - V
-  - {t: '7', h: toggle}
-  - LSHFT
-  - S
-  - Q
-  - W
-  - E
-  - R
-  - G
-  - '1'
-  - '2'
-  - '3'
-  - F1
-  - F9
-  - LALT
-  - A
-  - H
-  - D
-  - F
-  - T
-  - F2
-  - F3
+  - TAB
   - F4
-  - F5
-  - F6
-  - F7
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - LEFT ALT
-  - '8'
-  - '7'
-  '7':
-  - '5'
-  - '4'
-  - '3'
-  - '2'
-  - '1'
+  - F3
+  - F2
+  - F1
   - Y
   - M
   - '4'
@@ -317,25 +275,67 @@ layers:
   - '1'
   - '2'
   - '3'
-  - F1
-  - F9
-  - LALT
+  - DEV TOOLS
+  - F13
+  - F15
   - A
   - H
   - D
   - F
   - T
-  - F2
-  - F3
-  - F4
-  - F5
   - F6
   - F7
-  - '4'
-  - '5'
-  - '6'
-  - '8'
-  - '7'
+  - F8
+  - F9
+  - F10
+  - F11
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - LEFT ALT
+  - LEFT CONTROL
+  - {t: dotapt_abuse, h: sticky}
+  dotapt_abuse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&dota_buy N4'
+  - '&dota_buy N5'
+  - '&dota_buy N6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&dota_buy N1'
+  - '&dota_buy N2'
+  - '&dota_buy N3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
 combos:
 - p: [32, 33]
   k: BOOT LDR
