@@ -10,6 +10,7 @@
 #define RESET 4
 #define SNIPE 5
 #define GAME 6
+#define DOTA_PT 7
 
 // Левые основные кнопки (3 ряда по 6)
 
@@ -101,6 +102,22 @@
         };
     };
 
+    macros {
+        dota_buy: dota_buy {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            wait-ms = <250>;
+            tap-ms = <30>;
+            bindings
+                = <&kp N6>
+                , <&macro_param_1to1>
+                , <&kp MACRO_PLACEHOLDER>
+                , <&kp N6>
+                , <&kp N6>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
         timeout-ms = <20>;
@@ -183,7 +200,16 @@
 &kp TAB    &kp F4  &kp F3  &kp F2    &kp F1    &kp Y           &kp M             &kp N4        &kp N5        &kp NUMBER_6  &kp V    &to 0
 &kp LSHFT  &kp S   &kp Q   &kp W     &kp E     &kp R           &kp G             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F12  &kp F13
 &kp LALT   &kp A   &kp H   &kp D     &kp F     &kp T           &kp F6            &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
-                           &mkp MB1  &mkp MB2  &kp LEFT_ALT    &kp LEFT_CONTROL  &kp N7
+                           &mkp MB1  &mkp MB2  &kp LEFT_ALT    &kp LEFT_CONTROL  &sl DOTA_PT
+            >;
+        };
+
+        dotapt_abuse {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &dota_buy N4  &dota_buy N5  &dota_buy N6  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &dota_buy N1  &dota_buy N2  &dota_buy N3  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none  &none
+                     &none  &none  &none    &none  &none
             >;
         };
     };
