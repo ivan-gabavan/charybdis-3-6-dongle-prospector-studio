@@ -1,43 +1,43 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
   Base:
-  - ESCAPE
+  - ']'
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - {t: '{', h: '}'}
-  - {t: '"', h: '`'}
-  - TAB
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - \
   - {t: A, h: LEFT CONTROL}
-  - {t: R, h: LALT}
-  - {t: S, h: LSHFT}
-  - {t: T, h: LEFT COMMAND}
+  - {t: S, h: LALT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LEFT COMMAND}
   - G
-  - M
-  - {t: N, h: LEFT COMMAND}
-  - {t: E, h: RSHFT}
-  - {t: I, h: RALT}
-  - {t: O, h: LEFT CONTROL}
+  - H
+  - {t: H, h: LEFT COMMAND}
+  - {t: J, h: RSHFT}
+  - {t: K, h: RALT}
+  - {t: L, h: LEFT CONTROL}
   - {t: ':', h: ;}
   - '-'
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - .
   - ','
   - {t: '!', h: '?'}
   - '='
-  - F13
+  - '&len_switch_en'
   - SPACE
   - Mouse
   - {t: ENTER, h: Number}
@@ -57,11 +57,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Snipe
-  - Function
+  - Base
   - '&mkp MB2'
   - '&mkp MB1'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '{'
+  - '}'
   - '&mkp MB1'
   - '&mkp MB2'
   - '&mkp MB3'
@@ -81,48 +81,6 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: Function, type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Function:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,7 +109,7 @@ layers:
   - RIGHT
   - {t: $, h: LEFT CONTROL}
   - '>'
-  - {t: dota, h: toggle}
+  - {t: game, h: toggle}
   - '#'
   - '1'
   - '2'
@@ -168,6 +126,48 @@ layers:
   - SPACE
   - {type: held}
   - ''
+  game:
+  - TAB
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LEFT ALT
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: Base, h: toggle}
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - L CLK
+  - SPACE
+  - R CLK
+  - M CLK
+  - {t: ▽, type: trans}
   Reset:
   - {t: ▽, type: trans}
   - ''
@@ -249,93 +249,9 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: Function, type: held}
+  - {t: Base, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  dota:
-  - TAB
-  - F4
-  - F3
-  - F2
-  - F1
-  - Y
-  - M
-  - '4'
-  - '5'
-  - '6'
-  - V
-  - {t: Base, h: toggle}
-  - LSHFT
-  - S
-  - Q
-  - W
-  - E
-  - R
-  - G
-  - '1'
-  - '2'
-  - '3'
-  - DEV TOOLS
-  - F13
-  - F15
-  - A
-  - H
-  - D
-  - F
-  - T
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - LEFT ALT
-  - LEFT CONTROL
-  - {t: dotapt_abuse, h: sticky}
-  dotapt_abuse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&dota_buy N4'
-  - '&dota_buy N5'
-  - '&dota_buy N6'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&dota_buy N1'
-  - '&dota_buy N2'
-  - '&dota_buy N3'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
 combos:
 - p: [32, 33]
   k: BOOT LDR

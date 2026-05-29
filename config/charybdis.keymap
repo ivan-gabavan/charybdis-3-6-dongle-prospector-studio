@@ -103,12 +103,18 @@
     };
 
     macros {
-        dota_buy: dota_buy {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            wait-ms = <250>;
-            tap-ms = <30>;
-            bindings = <&kp N6 &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp N6 &kp N6>;
+        lan_switch_ru: lan_switch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F13 &to 1>;
+            label = "LAN_SWITCH";
+        };
+
+        len_switch_en: len_switch_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F13 &to 0>;
+            label = "LEN_SWITCH_EN";
         };
     };
 
@@ -132,30 +138,30 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q                &kp W        &kp F         &kp P                &kp B    &kp J        &kp L                &kp U         &kp Y        &hml RIGHT_BRACE LEFT_BRACE  &hml GRAVE DOUBLE_QUOTES
-&kp TAB     &hml LEFT_CONTROL A  &hml LALT R  &hml LSHFT S  &hml LEFT_COMMAND T  &kp G    &kp M        &hml LEFT_COMMAND N  &hml RSHFT E  &hml RALT I  &hml LEFT_CONTROL O          &hml SEMICOLON COLON
-&kp MINUS   &kp Z                &kp X        &kp C         &kp D                &kp V    &kp K        &kp H                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION    &kp EQUAL
-                                              &kp F13       &kp SPACE            &mo 1    &lt 3 ENTER  &kp BSPC
+&kp ESCAPE  &kp Q                &kp W        &kp E           &kp R                &kp T    &kp Y        &kp U                &kp I         &kp O        &kp P                      &hml GRAVE DOUBLE_QUOTES
+&kp TAB     &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G    &kp H        &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
+&kp MINUS   &kp Z                &kp X        &kp C           &kp V                &kp B    &kp N        &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
+                                              &lan_switch_ru  &kp SPACE            &mo 2    &lt 3 ENTER  &kp BSPC
+            >;
+        };
+
+        ru {
+            display-name = "Base";
+            bindings = <
+&kp RIGHT_BRACKET     &kp Q                &kp W        &kp E           &kp R                &kp T    &kp Y        &kp U                &kp I         &kp O        &kp P                      &kp LEFT_BRACKET
+&kp NON_US_BACKSLASH  &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G    &kp H        &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
+&kp MINUS             &kp Z                &kp X        &kp C           &kp V                &kp B    &kp N        &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
+                                                        &len_switch_en  &kp SPACE            &mo 2    &lt 3 ENTER  &kp BSPC
             >;
         };
 
         Mouse {
             display-name = "Mouse";
             bindings = <
-&bootloader  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans       &mo 5   &mo 2         &mkp MB2      &mkp MB1      &trans    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans       &trans  &trans        &trans        &trans        &trans    &trans  &trans    &trans    &trans    &trans  &trans
-                                   &mkp MB1      &mkp MB2      &mo 2     &trans  &trans
-            >;
-        };
-
-        Function {
-            display-name = "Function";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&bootloader  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans            &trans           &trans    &trans    &trans    &trans  &trans
+&trans       &mo 6   &mo 0         &mkp MB2      &mkp MB1      &kp LEFT_BRACE    &kp RIGHT_BRACE  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans       &trans  &trans        &trans        &trans        &trans            &trans           &trans    &trans    &trans    &trans  &trans
+                                   &mkp MB1      &mkp MB2      &none             &trans           &trans
             >;
         };
 
@@ -164,8 +170,17 @@
             bindings = <
 &studio_unlock  &kp TILDE                    &kp N7        &kp N8          &kp N9                &kp N0                  &kp LG(LS(NUMBER_4))   &kp PG_UP           &kp UP              &kp PG_DN  &hml RIGHT_BRACKET LEFT_BRACKET  &kp SINGLE_QUOTE
 &kp LESS_THAN   &hml LEFT_CONTROL AMPERSAND  &hml LALT N4  &hml LSHFT N5   &hml LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT            &kp DOWN            &kp RIGHT  &hml LEFT_CONTROL DOLLAR         &kp GREATER_THAN
-&to 6           &kp HASH                     &kp N1        &kp N2          &kp N3                &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS  &hml PERCENT MINUS  &kp COMMA  &kp AT_SIGN                      &kp EQUAL
+&to 4           &kp HASH                     &kp N1        &kp N2          &kp N3                &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS  &hml PERCENT MINUS  &kp COMMA  &kp AT_SIGN                      &kp EQUAL
                                                            &hml DOT COLON  &kp N0                &kp SPACE               &trans                 &none
+            >;
+        };
+
+        game {
+            bindings = <
+&kp TAB       &kp ESC    &kp Q  &kp W      &kp E      &kp R        &kp T      &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp LEFT_ALT  &kp LSHFT  &kp A  &kp S      &kp D      &kp F        &kp G      &kp H   &kp J  &kp K      &kp L    &kp SEMI
+&to 0         &kp LCTRL  &kp Z  &kp X      &kp C      &kp V        &kp B      &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                                &mkp LCLK  &kp SPACE  &mkp RCLK    &mkp MCLK  &trans
             >;
         };
 
@@ -185,25 +200,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
 &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-                        &mkp MB1  &mkp MB2  &mo 2     &trans  &trans
-            >;
-        };
-
-        dota {
-            bindings = <
-&kp TAB    &kp F4  &kp F3  &kp F2    &kp F1    &kp Y           &kp M             &kp N4        &kp N5        &kp NUMBER_6  &kp V    &to 0
-&kp LSHFT  &kp S   &kp Q   &kp W     &kp E     &kp R           &kp G             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F12  &kp F13
-&kp F15    &kp A   &kp H   &kp D     &kp F     &kp T           &kp F6            &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
-                           &mkp MB1  &mkp MB2  &kp LEFT_ALT    &kp LEFT_CONTROL  &sl DOTA_PT
-            >;
-        };
-
-        dotapt_abuse {
-            bindings = <
-&none  &none  &none  &none  &none  &none    &none  &dota_buy N4  &dota_buy N5  &dota_buy N6  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &dota_buy N1  &dota_buy N2  &dota_buy N3  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none  &none
-                     &none  &none  &none    &none  &none
+                        &mkp MB1  &mkp MB2  &mo 0     &trans  &trans
             >;
         };
     };
