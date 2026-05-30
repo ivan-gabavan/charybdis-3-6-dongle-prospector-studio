@@ -149,10 +149,10 @@
         ru {
             display-name = "Base";
             bindings = <
-&kp RIGHT_BRACKET     &kp Q                &kp W        &kp E           &kp R                &kp T        &kp Y             &kp U                &kp I         &kp O        &kp P                      &kp LEFT_BRACKET
-&kp NON_US_BACKSLASH  &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G        &kp H             &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
-&kp MINUS             &kp Z                &kp X        &kp C           &kp V                &kp B        &kp N             &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
-                                                        &len_switch_en  &kp SPACE            &mo MOUSE    &lt NUMBER ENTER  &kp BSPC
+&kp RIGHT_BRACKET  &kp Q                &kp W        &kp E           &kp R                &kp T        &kp Y             &kp U                &kp I         &kp O        &kp P                      &kp LEFT_BRACKET
+&kp BACKSLASH      &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G        &kp H             &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
+&kp MINUS          &kp Z                &kp X        &kp C           &kp V                &kp B        &kp N             &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
+                                                     &len_switch_en  &kp SPACE            &mo MOUSE    &lt NUMBER ENTER  &kp BSPC
             >;
         };
 
