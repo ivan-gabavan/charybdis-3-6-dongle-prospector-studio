@@ -139,9 +139,9 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q                &kp W        &kp E           &kp R                &kp T    &kp Y        &kp U                &kp I         &kp O        &kp P                      &hml GRAVE DOUBLE_QUOTES
-&kp TAB     &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G    &kp H        &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
-&kp MINUS   &kp Z                &kp X        &kp C           &kp V                &kp B    &kp N        &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
+&kp ESCAPE  &kp Q                &kp W        &kp E           &kp R                &kp T        &kp Y             &kp U                &kp I         &kp O        &kp P                      &hml GRAVE DOUBLE_QUOTES
+&kp TAB     &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G        &kp H             &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
+&kp MINUS   &kp Z                &kp X        &kp C           &kp V                &kp B        &kp N             &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
                                               &lan_switch_ru  &kp SPACE            &mo MOUSE    &lt NUMBER ENTER  &kp BSPC
             >;
         };
@@ -149,9 +149,9 @@
         ru {
             display-name = "Base";
             bindings = <
-&kp RIGHT_BRACKET     &kp Q                &kp W        &kp E           &kp R                &kp T    &kp Y        &kp U                &kp I         &kp O        &kp P                      &kp LEFT_BRACKET
-&kp NON_US_BACKSLASH  &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G    &kp H        &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
-&kp MINUS             &kp Z                &kp X        &kp C           &kp V                &kp B    &kp N        &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
+&kp RIGHT_BRACKET     &kp Q                &kp W        &kp E           &kp R                &kp T        &kp Y             &kp U                &kp I         &kp O        &kp P                      &kp LEFT_BRACKET
+&kp NON_US_BACKSLASH  &hml LEFT_CONTROL A  &hml LALT S  &hml LSHFT D    &hml LEFT_COMMAND F  &kp G        &kp H             &hml LEFT_COMMAND H  &hml RSHFT J  &hml RALT K  &hml LEFT_CONTROL L        &hml SEMICOLON COLON
+&kp MINUS             &kp Z                &kp X        &kp C           &kp V                &kp B        &kp N             &kp M                &kp DOT       &kp COMMA    &hml QUESTION EXCLAMATION  &kp EQUAL
                                                         &len_switch_en  &kp SPACE            &mo MOUSE    &lt NUMBER ENTER  &kp BSPC
             >;
         };
@@ -159,10 +159,10 @@
         Mouse {
             display-name = "Mouse";
             bindings = <
-&bootloader  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans            &trans           &trans    &trans    &trans    &trans  &trans
+&bootloader  &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans            &trans           &trans    &trans    &trans    &trans  &trans
 &trans       &mo SNIPE  &mo FUNCTION  &mkp MB2      &mkp MB1      &kp LEFT_BRACE    &kp RIGHT_BRACE  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans       &trans  &trans        &trans        &trans        &trans            &trans           &trans    &trans    &trans    &trans  &trans
-                                   &mkp MB1      &mkp MB2      &mo FUNCTION      &trans           &trans
+&trans       &trans     &trans        &trans        &trans        &trans            &trans           &trans    &trans    &trans    &trans  &trans
+                                      &mkp MB1      &mkp MB2      &mo FUNCTION      &trans           &trans
             >;
         };
 
@@ -188,9 +188,9 @@
 
         game {
             bindings = <
-&kp TAB       &kp ESC    &kp Q  &kp W      &kp E      &kp R        &kp T      &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp LEFT_ALT  &kp LSHFT  &kp A  &kp S      &kp D      &kp F        &kp G      &kp H   &kp J  &kp K      &kp L    &kp SEMI
-&to BASE      &kp LCTRL  &kp Z  &kp X      &kp C      &kp V        &kp B      &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp TAB       &kp ESC    &kp Q  &kp W      &kp E      &kp R        &kp T      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0
+&kp LEFT_ALT  &kp LSHFT  &kp A  &kp S      &kp D      &kp F        &kp G      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5
+&to BASE      &kp LCTRL  &kp Z  &kp X      &kp C      &kp V        &kp B      &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH
                                 &mkp LCLK  &kp SPACE  &mkp RCLK    &mkp MCLK  &trans
             >;
         };
@@ -208,10 +208,10 @@
         Snipe {
             display-name = "Snipe";
             bindings = <
-&trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
-                        &mkp MB1  &mkp MB2  &mo BASE  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &mkp MB2  &mkp MB1  &trans      &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans  &trans  &trans    &trans    &trans      &trans  &trans    &trans    &trans    &trans  &trans
+                        &mkp MB1  &mkp MB2  &mo BASE    &trans  &trans
             >;
         };
     };
