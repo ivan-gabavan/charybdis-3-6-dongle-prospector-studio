@@ -24,7 +24,7 @@ layers:
   - {t: J, h: RSHFT}
   - {t: K, h: RALT}
   - {t: L, h: LEFT CONTROL}
-  - {t: ':', h: ;}
+  - ;
   - '-'
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - .
   - ','
   - {t: '!', h: '?'}
-  - '='
+  - ''''
   - '&len_switch_en'
   - SPACE
   - Mouse
