@@ -165,7 +165,7 @@
 &studio_unlock  &kp TILDE                    &kp N7        &kp N8          &kp N9                &kp N0                  &kp LG(LS(NUMBER_4))   &kp PG_UP           &kp UP              &kp PG_DN  &hml RIGHT_BRACKET LEFT_BRACKET  &kp SINGLE_QUOTE
 &kp LESS_THAN   &hml LEFT_CONTROL AMPERSAND  &hml LALT N4  &hml LSHFT N5   &hml LEFT_COMMAND N6  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT            &kp DOWN            &kp RIGHT  &hml LEFT_CONTROL DOLLAR         &kp GREATER_THAN
 &to 6           &kp HASH                     &kp N1        &kp N2          &kp N3                &kp PIPE                &hml BACKSLASH SLASH   &hml ASTERISK PLUS  &hml PERCENT MINUS  &kp COMMA  &kp AT_SIGN                      &kp EQUAL
-                                                           &hml DOT COLON  &kp N0                &kp SPACE               &trans                 &none
+                                                           &hml DOT COLON  &kp N0                &mo 7                   &trans                 &none
             >;
         };
 
@@ -189,21 +189,30 @@
             >;
         };
 
-        dota {
+        game {
             bindings = <
-&kp TAB    &kp F4  &kp F3  &kp F2    &kp F1    &kp Y           &kp M             &kp N4        &kp N5        &kp NUMBER_6  &kp V    &to 0
-&kp LSHFT  &kp S   &kp Q   &kp W     &kp E     &kp R           &kp G             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F12  &kp F13
-&kp F15    &kp A   &kp H   &kp D     &kp F     &kp T           &kp F6            &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
-                           &mkp MB1  &mkp MB2  &kp LEFT_ALT    &kp LEFT_CONTROL  &sl DOTA_PT
+&to 0     &kp ESC    &kp Q  &kp W      &kp E      &kp R        &kp T  &kp N6     &kp N7  &kp N8  &kp N9     &kp N0
+&kp TAB   &kp LSHFT  &kp A  &kp S      &kp D      &kp F        &kp G  &kp N1     &kp N2  &kp N3  &kp N4     &kp N5
+&kp LALT  &kp LCTRL  &kp Z  &kp X      &kp C      &kp V        &kp B  &kp N      &kp M   &kp M   &kp COMMA  &kp DOT
+                            &mkp LCLK  &kp SPACE  &mkp RCLK    &mo 2  &mkp MCLK
             >;
         };
 
-        dotapt_abuse {
+        vim {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &dota_buy N4  &dota_buy N5  &dota_buy N6  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &dota_buy N1  &dota_buy N2  &dota_buy N3  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none  &none
-                     &none  &none  &none    &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp K   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp H   &kp J   &kp L   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        ru {
+            bindings = <
+&kp ESC   &kp W     &kp R  &kp K              &kp COMMA        &kp Q     &kp COMMA  &kp S                 &kp Z  &kp SQT  &kp A  &kp QUESTION
+&kp X     &kp P     &kp D  &hml LEFT_SHIFT Y  &hml LEFT_GUI N  &kp L     &kp B      &kp F                 &kp J  &kp T    &kp C  &kp BACKSLASH
+&kp SEMI  &kp LBKT  &kp G  &kp H              &kp V            &kp U     &kp DOT    &hml RIGHT_BRACKET M  &kp E  &kp DOT  &kp I  &kp EXCLAMATION
+                           &trans             &trans           &trans    &trans     &trans
             >;
         };
     };

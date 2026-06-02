@@ -151,7 +151,7 @@ layers:
   - RIGHT
   - {t: $, h: LEFT CONTROL}
   - '>'
-  - {t: dota, h: toggle}
+  - {t: game, h: toggle}
   - '#'
   - '1'
   - '2'
@@ -165,7 +165,7 @@ layers:
   - '='
   - {t: ':', h: .}
   - '0'
-  - SPACE
+  - vim
   - {type: held}
   - ''
   Reset:
@@ -252,90 +252,132 @@ layers:
   - {t: Function, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  dota:
-  - TAB
-  - F4
-  - F3
-  - F2
-  - F1
-  - Y
-  - M
-  - '4'
-  - '5'
-  - '6'
-  - V
+  game:
   - {t: Base, h: toggle}
-  - LSHFT
-  - S
+  - ESC
   - Q
   - W
   - E
   - R
+  - T
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - TAB
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
   - G
   - '1'
   - '2'
   - '3'
-  - DEV TOOLS
-  - F13
-  - F15
-  - A
+  - '4'
+  - '5'
+  - LALT
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - M
+  - ','
+  - .
+  - L CLK
+  - SPACE
+  - R CLK
+  - Function
+  - M CLK
+  vim:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - K
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - H
-  - D
-  - F
-  - T
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - LEFT ALT
-  - LEFT CONTROL
-  - {t: dotapt_abuse, h: sticky}
-  dotapt_abuse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&dota_buy N4'
-  - '&dota_buy N5'
-  - '&dota_buy N6'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&dota_buy N1'
-  - '&dota_buy N2'
-  - '&dota_buy N3'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - J
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  ru:
+  - ESC
+  - W
+  - R
+  - K
+  - ','
+  - Q
+  - ','
+  - S
+  - Z
+  - ''''
+  - A
+  - '?'
+  - X
+  - P
+  - D
+  - {t: Y, h: LEFT SHIFT}
+  - {t: N, h: LEFT GUI}
+  - L
+  - B
+  - F
+  - J
+  - T
+  - C
+  - \
+  - ;
+  - '['
+  - G
+  - H
+  - V
+  - U
+  - .
+  - {t: M, h: ']'}
+  - E
+  - .
+  - I
+  - '!'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [32, 33]
   k: BOOT LDR
