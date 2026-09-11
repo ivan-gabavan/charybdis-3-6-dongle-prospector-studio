@@ -35,7 +35,7 @@
     };
 
     move {
-      layers = <DEF MOUSE GENSHIN>;
+      layers = <DEF MOUSE>;
       input-processors = <&auto_mouse_layer MOUSE 1000>;
     };
   };
