@@ -253,8 +253,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   game:
-  - {t: Base, h: toggle}
   - ESC
+  - F1
   - Q
   - W
   - E
@@ -288,7 +288,7 @@ layers:
   - M
   - M
   - ','
-  - .
+  - {t: Base, h: toggle}
   - L CLK
   - SPACE
   - R CLK
