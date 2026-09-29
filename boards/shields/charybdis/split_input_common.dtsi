@@ -8,6 +8,7 @@
 #define SYM 4
 #define SNIPE 5
 #define GAME 6 
+#define DOTA 9
 
 / {
   split_inputs {
@@ -36,7 +37,7 @@
     };
 
     move {
-      layers = <DEF GAME>;
+      layers = <DEF GAME DOTA>;
     };
   };
 

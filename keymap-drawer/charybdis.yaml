@@ -287,7 +287,7 @@ layers:
   - N
   - M
   - M
-  - ','
+  - {t: dota, h: toggle}
   - {t: Base, h: toggle}
   - L CLK
   - SPACE
@@ -378,6 +378,90 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  dota:
+  - TAB
+  - F4
+  - F3
+  - F2
+  - F1
+  - Y
+  - M
+  - '4'
+  - '5'
+  - '6'
+  - V
+  - {t: Base, h: toggle}
+  - LSHFT
+  - S
+  - Q
+  - W
+  - E
+  - R
+  - G
+  - '1'
+  - '2'
+  - '3'
+  - DEV TOOLS
+  - F13
+  - F15
+  - A
+  - H
+  - D
+  - F
+  - T
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - LEFT ALT
+  - LEFT CONTROL
+  - {t: dotapt_abuse, h: sticky}
+  dotapt_abuse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&dota_buy N4'
+  - '&dota_buy N5'
+  - '&dota_buy N6'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&dota_buy N1'
+  - '&dota_buy N2'
+  - '&dota_buy N3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
 combos:
 - p: [32, 33]
   k: BOOT LDR
