@@ -192,9 +192,9 @@
 
         game {
             bindings = <
-&kp ESC   &kp F1     &kp Q  &kp W      &kp E      &kp R        &kp T  &kp N6     &kp N7  &kp N8  &kp N9     &kp N0
-&kp TAB   &kp LSHFT  &kp A  &kp S      &kp D      &kp F        &kp G  &kp N1     &kp N2  &kp N3  &kp N4     &kp N5
-&kp LALT  &kp LCTRL  &kp Z  &kp X      &kp C      &kp V        &kp B  &kp N      &kp M   &kp M   &to DOTA   &to BASE
+&kp ESC   &kp F1     &kp Q  &kp W      &kp E      &kp R        &kp T  &kp N6     &kp N7  &kp N8  &kp N9    &kp N0
+&kp TAB   &kp LSHFT  &kp A  &kp S      &kp D      &kp F        &kp G  &kp N1     &kp N2  &kp N3  &kp N4    &kp N5
+&kp LALT  &kp LCTRL  &kp Z  &kp X      &kp C      &kp V        &kp B  &kp N      &kp M   &kp M   &to DOTA  &to BASE
                             &mkp LCLK  &kp SPACE  &mkp RCLK    &mo 2  &mkp MCLK
             >;
         };
@@ -219,10 +219,10 @@
 
         dota {
             bindings = <
-&kp TAB    &kp F4  &kp F3  &kp F2    &kp F1    &kp Y           &kp M             &kp N4        &kp N5        &kp NUMBER_6  &kp V    &to BASE
-&kp LSHFT  &kp S   &kp Q   &kp W     &kp E     &kp R           &kp G             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F12  &kp F13
-&kp F15    &kp A   &kp H   &kp D     &kp F     &kp T           &kp F6            &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
-                           &mkp MB1  &mkp MB2  &kp LEFT_ALT    &kp LEFT_CONTROL  &sl DOTA_PT
+&kp TAB           &kp LEFT_ALT  &kp F3  &kp F2        &kp F1        &kp Y           &kp M             &kp N4        &kp N5        &kp NUMBER_6  &kp V    &to BASE
+&kp LSHFT         &kp S         &kp Q   &kp W         &kp E         &kp R           &kp G             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F12  &kp F13
+&kp LEFT_CONTROL  &kp A         &kp H   &kp D         &kp F         &kp T           &kp F6            &kp F7        &kp F8        &kp F9        &kp F10  &kp F11
+                                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp LEFT_CONTROL  &sl DOTA_PT
             >;
         };
 

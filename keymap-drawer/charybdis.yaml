@@ -380,7 +380,7 @@ layers:
   - {t: ▽, type: trans}
   dota:
   - TAB
-  - F4
+  - LEFT ALT
   - F3
   - F2
   - F1
@@ -403,7 +403,7 @@ layers:
   - '3'
   - DEV TOOLS
   - F13
-  - F15
+  - LEFT CONTROL
   - A
   - H
   - D
@@ -415,9 +415,9 @@ layers:
   - F9
   - F10
   - F11
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - LEFT ALT
+  - '1'
+  - '2'
+  - '3'
   - LEFT CONTROL
   - {t: dotapt_abuse, h: sticky}
   dotapt_abuse:
